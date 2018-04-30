@@ -4,15 +4,11 @@ title: About
 permalink: /about/
 ---
 
-This is the base Jekyll theme. You can find out more info about customizing your Jekyll theme, as well as basic Jekyll usage documentation at [jekyllrb.com](https://jekyllrb.com/)
+## Full-stack web developer
 
-You can find the source code for Minima at GitHub:
-[jekyll][jekyll-organization] /
-[minima](https://github.com/jekyll/minima)
+# Javascript centric full stack web engineer that dabbles in indie video game development.
 
-You can find the source code for Jekyll at GitHub:
-[jekyll][jekyll-organization] /
-[jekyll](https://github.com/jekyll/jekyll)
+Currently, I work on real time chat communication tools to better connect
+candidates to recruiters over at <a href="https://flashrecruit.com" target="_blank">FlashRecruit.com</a> as their lead developer.
 
-
-[jekyll-organization]: https://github.com/jekyll
+I also code games for my game studio: <a href="http://www.deadlygoat.com" target="_blank">Deadly Goat Games</a>.
