@@ -20,15 +20,17 @@ their 2D features.
 
 This lead me to find Godot 3.  I've attempted this engine briefly in
 the past (2.x with OS X), but, the project select window was bugged out and unusable which left
-me with a hard pass at the time.  But, I'm very glad I revisited this engine and the
+me with a hard pass at the time.  I'm very glad I revisited this engine and the
 old window bug is gone.  Godot 3 is a very lightweight 2d/3d game engine that
 uses it's own python-like scripting language.  Coming from a Javscript / Python
-or probably any scripting language background will make you feel at home.  Like
-Unity, I was able to get Aseprite and Tiled importing done with 3rd party
+or probably any scripting language background will make you feel at home.  It
+works on Windows, OS X, and Linux and has easy export options for all three as
+well.
+
+Like Unity, I was able to get Aseprite and Tiled importing done with 3rd party
 add-ons.  This process seemed to go much more smoothly than it did in Unity as
 well.
 
-That pretty much brings us up to now.  Within the first week of using Godot 3,
-I  was able to handle all of asset pipeline needs, get a camera clamped to tile
+Within the first week of using Godot 3, I  was able to handle all of asset pipeline needs, get a camera clamped to tile
 map boundaries that was imported from Tiled, add player movement and collision detection with the a\*
 algorithm.  A very great week.

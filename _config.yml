@@ -19,10 +19,12 @@ description: >- # this means to ignore newlines until "baseurl:"
   Tim Mendenhall's Portfolio and Blog
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
+paginate: 5
 twitter_username: timmendenhall
 github_username: timmendenhall
 linkedin_username: timmendenhall
 google_analytics: UA-15283577-1
+google_adsense: ca-pub-3244298742556203
 disqus:
   shortname: tim-mendenhall
 show_excerpts: true

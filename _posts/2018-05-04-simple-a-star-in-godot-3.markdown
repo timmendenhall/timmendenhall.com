@@ -12,11 +12,9 @@ data.
 If you don't already know what pathfinding or the A* algorithm is, I'd suggest
 starting with this quick read by Johann Fradj: ["Introduction to Pathfinding"](https://www.raywenderlich.com/4946/introduction-to-a-pathfinding).
 
-If you haven't setup Godot 3 yet, you can check out my [Introduction to Godot
-3]() post.
+If you haven't setup or heard of Godot 3 yet, you can check out my [Introduction to Godot
+3]({% post_url 2018-05-04-introduction-to-godot-3 %}) post.
 
+Now that you're all caught up, let's get started!
 
-{% highlight python %}
-var a_star
-{% endhighlight %}
 
