@@ -2,7 +2,7 @@
 layout: post
 title:  "HTTPS Certificates with Github Pages on a Custom Domain"
 date:   2018-05-04 04:50:40 -0400
-categories: blog godot3 a-star
+categories: blog github https
 ---
 
 Just announced 3 days ago is the ability to add HTTPS certificates on GitHub
@@ -68,3 +68,20 @@ the box allowed Enforce HTTPS.
 
 Finally, check the "Enforce HTTPS" box and run a couple quick tests in a browser
 to confirm your site is re-routing to your new https version.
+
+If you use the jekyll-sitemap plugin, be sure to also update your `_config.yml`
+file's "url" property from "http" to "https".  If you don't, your sitemap will
+still reference the http protocol instead of https.
+
+{% highlight yaml %}
+url: "https://www.timmendenhall.com"
+{% endhighlight %}
+
+If you're using Google Search Console and had your old sitemap submitted, be
+sure to go back in and resubmit your sitemap now that all the URLs have changed
+protocol from http to https.
+
+That's it!  It really wasn't too many steps to get the Enforce HTTPS and
+get everything going on Github.  And I'm truly happy they finally added this as a
+feature for custom domains.  If you have any questions, comments, or concerns
+please do comment below!

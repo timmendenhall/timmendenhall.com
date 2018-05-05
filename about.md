@@ -4,8 +4,6 @@ title: About
 permalink: /about/
 ---
 
-## Full-stack web developer
-
 # Javascript centric full stack web engineer that dabbles in indie video game development.
 
 Currently, I work on real time chat communication tools to better connect
