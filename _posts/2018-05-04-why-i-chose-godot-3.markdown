@@ -34,3 +34,20 @@ well.
 Within the first week of using Godot 3, I  was able to handle all of asset pipeline needs, get a camera clamped to tile
 map boundaries that was imported from Tiled, add player movement and collision detection with the a\*
 algorithm.  A very great week.
+
+Here's a quick rundown of some features I wanted for my particular 2D projects
+and where Unity, Unreal Engine, and Godot fit.  The Unreal Engine and Unity
+tests were using the same exact animations, but, I had to make a custom tile map
+in Unreal.  The Godot project is using a few more animations now and a larger
+tilemap, but, it's still of course a smaller executable.  I would be curious as
+to the actual release build sizes for each.  But, I can tell already Godot is
+going to win here.
+
+
+| |Unreal Engine|Unity|Godot
+|----
+|Aseprite Import|❌|✅|✅
+|Tiled Import|✅|✅|✅
+|Linux Support|✅ - Technically can build it on Linux.  But, there's no major official support.|✅ - Technically has Linux support.  But, it's behind on versions compared to OS X and Windows.  Which makes a project harder to manage with users on different operating systems.|✅
+|Version Control Size|Largest|Medium|Smallest - All resources do need an additional ".import" file, but, everything is plain text.  Makes versioning in git real nice
+|Executable Size|Largest - ~100 MB for my 1 or 2 animation and small level test.|Medium - ~70 MB|Smallest - ~30 MB
