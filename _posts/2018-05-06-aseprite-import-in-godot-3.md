@@ -100,6 +100,39 @@ animation playing.
 
 ![Default Godot 3 animation]({{ "/assets/images/godot-aseprite/godot-sprite-default-animation.png" | absolute_url }})
 
+I went ahead and saved this scene in the project as
+`Player.tscn`.  If you click the run or do a build and it asks for a default
+scene, you can either make a brand new scene and instance the Player scene in it
+or set the `Player.tscn` as your default scene.  I did the former and named the
+scene `Game.tscn`.
+
+You can change your default scene the game starts up with at anytime by going to
+`Project -> Project Settings -> Application - Run` and changing the `Main Scene`
+property.
+
+### Fixing a bug with Aseprite Import addon
+
+At the time of this writing, there is currently a 1 line bug in the Aseprite
+Import addon that prevents Godot 3 from closing down properly and it just hangs.
+I've fixed this in our tutorials repository already simply by applying this pull
+request by @mosujiba.  <https://github.com/eska014/aseprite-import/pull/10>
+
+If you're having issues with Godot hanging when you try to exit after using this
+add on, then follow along.
+
+First, we're going to open the addon file found here: `res://addons/eska.aseprite_importer/eska.aseprite_importer.gd`
+
+Once you're in this file all we have to do is comment out or delete this line in
+the `_stop()` function (Line 45 as of today):
+
+{% highlight python %}
+import_plugin = null
+{% endhighlight %}
+
+That's it, restart Godot now and it'll still hang because it doesn't seem to
+re-load our changes yet.  But, when you start up Godot and the project the next
+time, it should close normally again.
+
 ### A quick note on the pixel perfect look
 
 If your sprite is looking blurry, it's because texture resource data such as our
@@ -110,8 +143,15 @@ changes, be sure to save them now.  Here's what my sprite sheet png looks like.
 
 ![Godot 3 Png Turn Off Filter]({{ "/assets/images/godot-aseprite/godot-png-filter-off.png" | absolute_url }})
 
-I took some additional steps in this example project and set a design size
-resolution of 128x128 pixels.  I also set the Stretch mode to 2D and expand.
+I took some additional steps in this example project.  I set a design size
+resolution of 128x128 pixels since the sprite we're using right now is very
+small.  I also set the Stretch mode to 2D and expand.  And setting the test size to 512x512 pixels makes the window pop up in that
+size when testing, but, it'll now take the 128x128 design size and scale it up
+to fit the screen.  You want that scale factor to be a whole number, so in this
+case it's 4 because 512 divided by 128 equals 4.  That just means we design the
+game at 128x128 then take that and scale it up 4x and place that in the 512x512
+window.
+
 You can find these settings under `Project -> Project Settings -> Display
 (Window)`.  I plan on writing up an even more detailed tutorial in the future on how you can
 come up with a perfect design size and set your project up for it.

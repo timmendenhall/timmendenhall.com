@@ -5,6 +5,10 @@ date:   2018-05-04 04:50:40 -0400
 categories: blog github https
 ---
 
+![HTTPS Certificates with Github Pages on a Custom Domain]({{ "/assets/images/github-pages-https/header.png" | absolute_url }})
+
+### Quick Intro
+
 Just announced 3 days ago is the ability to add HTTPS certificates on GitHub
 pages that are using a custom domain.  Check out their official blog post here:
 <https://blog.github.com/2018-05-01-github-pages-custom-domains-https/>
@@ -19,7 +23,9 @@ also assume you've set up a custom domain with github pages and added your CNAME
 file and DNS entries.  If you haven't updated your DNS entries to match their
 new servers, you might want to follow along for at least that first step too.
 
-Back story -- When I turned this on for www.deadlygoat.com everything worked without a
+### The Issue
+
+When I turned enforce https on for www.deadlygoat.com everything worked without a
 hitch.  I just went to the repository settings page, and checked the "Enforce
 HTTPS" checkbox towards the bottom of the page.  But, when I went to
 www.timmendenhall.com and attempted to turn this on today.  I was left with
@@ -27,6 +33,8 @@ the old familiar "Unavailable because you have a custom domain configured"
 message.
 
 ![Old Warning Not Allowing Us To Turn On HTTPS]({{ "/assets/images/github-pages-https/before.png" | absolute_url }})
+
+### The fix
 
 Our fix is really just three simple steps:
 
@@ -69,6 +77,8 @@ the box allowed Enforce HTTPS.
 Finally, check the "Enforce HTTPS" box and run a couple quick tests in a browser
 to confirm your site is re-routing to your new https version.
 
+## Optional fixes for sitemap and Google Search Console
+
 If you use the jekyll-sitemap plugin, be sure to also update your `_config.yml`
 file's "url" property from "http" to "https".  If you don't, your sitemap will
 still reference the http protocol instead of https.
@@ -80,6 +90,8 @@ url: "https://www.timmendenhall.com"
 If you're using Google Search Console and had your old sitemap submitted, be
 sure to go back in and resubmit your sitemap now that all the URLs have changed
 protocol from http to https.
+
+## Wrap up
 
 That's it!  It really wasn't too many steps to get the Enforce HTTPS and
 get everything going on Github.  And I'm truly happy they finally added this as a
