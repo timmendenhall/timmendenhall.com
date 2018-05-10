@@ -136,10 +136,12 @@ time, it should close normally again.
 ### A quick note on the pixel perfect look
 
 If your sprite is looking blurry, it's because texture resource data such as our
-png default to having `Filter` on.  You can open your png file from Godot by
-double clicking it from the FileSystem pane.  Then in your inspector make sure
-the Flags are all unchecked, but, specifically `Filter`.  If you had to make
-changes, be sure to save them now.  Here's what my sprite sheet png looks like.
+png default to having `Filter` on.  We can turn the `Filter` property off
+globally by using the `Import` tab (the one to the right of `Scene`).  With the
+png selected in our `FileSystem` tab, let's take a look at the `Filter` property
+on the `Import` tab and make sure we have it unchecked.  If it was previously
+checked and we changed it to being unchecked now, we will have to also click the
+`Reimport` button.
 
 ![Godot 3 Png Turn Off Filter]({{ "/assets/images/godot-aseprite/godot-png-filter-off.png" | absolute_url }})
 
