@@ -76,6 +76,11 @@ property is unchecked.  You can check by double-clicking your tiles png file and
 checking for `Filter` in the `Import` pane.  If it was checked, uncheck it and
 hit re-import.
 
+You can also read a more in-depth article I wrote on how to turn this off
+globally and more here:
+
+[Turning off Godot 3 Filter]({% post_url 2018-05-16-godot-settings-for-pixel-games %}#godot-3-project-settings-for-pixel-perfect-2d)
+
 ### Wrap up
 
 You can see it's actually quite easy to import tilemaps from Tiled into Godot 3.

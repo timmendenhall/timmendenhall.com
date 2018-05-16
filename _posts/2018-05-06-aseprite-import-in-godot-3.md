@@ -136,26 +136,9 @@ time, it should close normally again.
 ### A quick note on the pixel perfect look
 
 If your sprite is looking blurry, it's because texture resource data such as our
-png default to having `Filter` on.  We can turn the `Filter` property off
-globally by using the `Import` tab (the one to the right of `Scene`).  With the
-png selected in our `FileSystem` tab, let's take a look at the `Filter` property
-on the `Import` tab and make sure we have it unchecked.
+png default to having `Filter` on.  You can read how to turn that off here:
 
-You can simply uncheck `Filter` or you can use the 2D Pixel preset from the drop
-presets dropdown.  Let's go ahead and click the preset button and select `2D
-Pixel`.
-
-![Godot 3 Import Presets]({{ "/assets/images/godot-aseprite/import-preset-2d-pixel.png" | absolute_url }})
-
-Then after you selected `2D Pixel`, click the preset button again and click `Set
-as default for 'Texture'`.  This will make sure all textures we add from now on
-will be imported with the pixel perfect settings.
-
-![Godot 3 Import Presets Set Default]({{ "/assets/images/godot-aseprite/import-preset-set-default.png" | absolute_url }})
-
-If we had just changed Filter now, we will have to be sure to click the `Reimport` button so our new settings will be applied to the existing Texture.
-
-![Godot 3 Png Turn Off Filter]({{ "/assets/images/godot-aseprite/godot-png-filter-off.png" | absolute_url }})
+[Turning off Godot 3 Filter]({% post_url 2018-05-16-godot-settings-for-pixel-games %}#godot-3-project-settings-for-pixel-perfect-2d)
 
 I took some additional steps in this example project.  I set a design size
 resolution of 128x128 pixels since the sprite we're using right now is very
@@ -167,8 +150,11 @@ game at 128x128 then take that and scale it up 4x and place that in the 512x512
 window.
 
 You can find these settings under `Project -> Project Settings -> Display
-(Window)`.  I plan on writing up an even more detailed tutorial in the future on how you can
-come up with a perfect design size and set your project up for it.
+(Window)`.
+
+You can read more about these types of project settings in my article here:
+
+[Godot 3 2D Pixel Perfect Settings]({% post_url 2018-05-16-godot-settings-for-pixel-games %}#window-size-and-resolution)
 
 ### Wrap up
 
