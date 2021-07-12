@@ -1,10 +1,11 @@
 import React from 'react';
 import './Welcome.css';
+import {SocialBar} from "../SocialBar";
 
 export const Welcome = () => {
     return (
         <>
-            <div className="welcome__background"></div>
+            <div className="welcome__background"/>
             <div className="welcome__container">
                 <div className="welcome__card">
                 <span className="welcome__card-greeting">
@@ -17,6 +18,7 @@ export const Welcome = () => {
                     Full-stack Web Developer
                 </span>
                 </div>
+                <SocialBar/>
             </div>
         </>
 
