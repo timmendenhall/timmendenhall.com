@@ -15,4 +15,10 @@
     margin: 0.5em 1em;
     padding: 0.25em 1em;
     font-size: 1.2em;
+    text-decoration: none;
+    transition: background-color 1s;
+}
+
+.social-bar__button:hover {
+    background-color: #000000;
 }
