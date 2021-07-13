@@ -18,6 +18,15 @@
     filter: blur(10px);
 }
 
+.welcome__profile-image {
+    border-radius: 50%;
+    border: 2px solid #ffffff;
+    z-index: 1;
+    margin-bottom: 50px;
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.6), 0 3px 10px 0 rgba(0, 0, 0, 0.59);
+    width: 8em;
+}
+
 .welcome__card {
     position: relative;
     background-color: rgba(0, 0, 0, 0.7);
@@ -26,7 +35,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding: 50px;
+    padding: 0.85em;
     border-radius: 25px;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.6), 0 6px 20px 0 rgba(0, 0, 0, 0.59);
 }
@@ -35,6 +44,18 @@
     font-size: 4em;
     font-family: 'Manrope', sans-serif;
 }
+
+
+@media (max-width: 500px) {
+    .welcome__card-greeting {
+        font-size: 3em;
+    }
+
+    .welcome__card-greeting-small {
+        font-size: 1em;
+    }
+}
+
 
 .welcome__card-greeting-small {
     font-size: 2em;
