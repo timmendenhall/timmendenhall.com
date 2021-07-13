@@ -1,3 +1,6 @@
+/*noinspection CssInvalidAtRule*/
+@import-normalize; /* bring in normalize.css styles */
+
 body {
   margin: 0;
   padding: 0;
@@ -6,9 +9,18 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   overflow-x: hidden;
+  background-color: #000000;
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+.page__container {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
 }

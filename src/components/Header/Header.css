@@ -1,14 +1,14 @@
 .header__container {
-    background-color: #131212;
-    min-height: 40px;
-    width: 100vw;
-    position: absolute;
-    top: 0;
-    padding: 10px;
+  background-color: #131212;
+  min-height: 40px;
+  width: 100vw;
+  position: absolute;
+  top: 0;
+  padding: 10px;
 }
 
 .header__logo {
-    font-size: 30px;
-    font-family: 'Fredoka One', cursive;
-    text-shadow: 2px 2px #545454;
+  font-size: 30px;
+  font-family: 'Fredoka One', cursive;
+  text-shadow: 2px 2px #545454;
 }
