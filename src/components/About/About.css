@@ -16,3 +16,8 @@
   width: 5em;
   border-radius: 50%;
 }
+
+.about__content-icon {
+  font-size: 3em;
+  color: #8d8d8d;
+}

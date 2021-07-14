@@ -1,8 +1,5 @@
 import React from 'react';
 import './About.css';
-import marioImage from './mario.jpg';
-import htmlImage from './html-for-dummies.jpg';
-import ti83Image from './TI-83.png';
 
 export const About = () => {
   return (
@@ -19,11 +16,11 @@ export const About = () => {
             gaming and I'm still quite a passionate gamer and indie game
             developer in my spare time.
           </p>
-          <img src={marioImage} className="about__content-image" />
+          <i className="fas fa-gamepad about__content-icon"></i>
         </div>
 
         <div className="about__content-container">
-          <img src={htmlImage} className="about__content-image" />
+          <i className="fas fa-book about__content-icon"></i>
           <p className="pl2">
             In middle school a friend showed me his website he made for a
             Starcraft gaming group he ran. I was so thrilled seeing his original
@@ -37,13 +34,13 @@ export const About = () => {
           <p className="pr2">
             By high school I got a graphing calculator, the TI-83. This changed
             my world forever with game development. I spent all of my spare time
-            in class making small games.
+            in class making small games in Basic on the calculator.
           </p>
-          <img src={ti83Image} className="about__content-image" />
+          <i className="fas fa-calculator about__content-icon"></i>
         </div>
 
         <div className="about__content-container">
-          <img src={htmlImage} className="about__content-image" />
+          <i className="fas fa-user-graduate about__content-icon"></i>
           <p className="pl2">
             After high school, I knew I wanted to be a game developer! So, I
             went to college and got my degree in Game and Simulation
