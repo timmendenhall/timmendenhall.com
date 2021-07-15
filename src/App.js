@@ -1,12 +1,12 @@
 import './App.css';
-// import {Header} from "./components/Header";
+import { NavBar } from './components/NavBar';
 import { Welcome } from './components/Welcome';
 import { About } from './components/About';
 
 function App() {
   return (
     <div className="App">
-      {/*<Header/>*/}
+      <NavBar />
       <Welcome />
       <About />
     </div>
