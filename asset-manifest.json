@@ -1,14 +1,14 @@
 {
   "files": {
-    "main.css": "/static/css/main.b6c66873.chunk.css",
-    "main.js": "/static/js/main.151b0fce.chunk.js",
-    "main.js.map": "/static/js/main.151b0fce.chunk.js.map",
+    "main.css": "/static/css/main.a6f9b321.chunk.css",
+    "main.js": "/static/js/main.5c105c0a.chunk.js",
+    "main.js.map": "/static/js/main.5c105c0a.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.1ce44ecc.js",
     "runtime-main.js.map": "/static/js/runtime-main.1ce44ecc.js.map",
     "static/js/2.38bc09bb.chunk.js": "/static/js/2.38bc09bb.chunk.js",
     "static/js/2.38bc09bb.chunk.js.map": "/static/js/2.38bc09bb.chunk.js.map",
     "index.html": "/index.html",
-    "static/css/main.b6c66873.chunk.css.map": "/static/css/main.b6c66873.chunk.css.map",
+    "static/css/main.a6f9b321.chunk.css.map": "/static/css/main.a6f9b321.chunk.css.map",
     "static/js/2.38bc09bb.chunk.js.LICENSE.txt": "/static/js/2.38bc09bb.chunk.js.LICENSE.txt",
     "static/media/Welcome.css": "/static/media/background.c38f2723.jpg",
     "static/media/profile-pic.4a933900.jpg": "/static/media/profile-pic.4a933900.jpg"
@@ -16,7 +16,7 @@
   "entrypoints": [
     "static/js/runtime-main.1ce44ecc.js",
     "static/js/2.38bc09bb.chunk.js",
-    "static/css/main.b6c66873.chunk.css",
-    "static/js/main.151b0fce.chunk.js"
+    "static/css/main.a6f9b321.chunk.css",
+    "static/js/main.5c105c0a.chunk.js"
   ]
 }
