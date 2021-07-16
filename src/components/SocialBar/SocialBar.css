@@ -4,7 +4,6 @@
   justify-content: center;
   align-items: center;
   z-index: 5;
-  margin-top: 0.5em;
 }
 
 .social-bar__button {
@@ -12,7 +11,7 @@
   border-radius: 5px;
   border: 2px solid #ffffff;
   color: #ffffff;
-  margin: 0.5em 1em;
+  margin: 0em 1em;
   padding: 0.25em 0.75em;
   font-size: 0.85em;
   text-decoration: none;
