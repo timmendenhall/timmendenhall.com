@@ -13,10 +13,19 @@
 .nav-bar__container a {
   text-decoration: none;
   font-size: 0.85em;
-  padding: 1rem 0.5rem;
+  margin: 1rem;
 }
 
-.nav-bar__container a:link, a:visited {
+.nav-bar__container a.active, .nav-bar__container a.active:link, .nav-bar__container a.active:visited {
+  border-bottom:  2px solid #ffffff;
+  color: #ffffff;
+}
+
+.nav-bar__container a:link, .nav-bar__container a:visited {
+  color: #d2d2d2;
+}
+
+.nav-bar__container a:hover, .nav-bar__container a:active {
   color: #ffffff;
 }
 

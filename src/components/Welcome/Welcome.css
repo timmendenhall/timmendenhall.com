@@ -14,7 +14,7 @@
   border-radius: 50%;
   border: 2px solid #ffffff;
   z-index: 1;
-  margin-bottom: 50px;
+  margin-bottom: 3em;
   box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.6), 0 3px 10px 0 rgba(0, 0, 0, 0.59);
   width: 8em;
 }
@@ -30,14 +30,16 @@
   padding: 0.85em;
   border-radius: 25px;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.6), 0 6px 20px 0 rgba(0, 0, 0, 0.59);
+  margin-bottom: 3em;
 }
 
 .welcome__card-greeting {
-  font-size: 3em;
-  font-family: 'Russo One', sans-serif;
+  font-size: 3.2em;
+  font-family: 'Ubuntu', sans-serif;
 }
 
 .welcome__card-greeting-small {
   font-size: 2em;
   font-family: 'Open Sans Condensed', sans-serif;
+  color: #d2d2d2;
 }
