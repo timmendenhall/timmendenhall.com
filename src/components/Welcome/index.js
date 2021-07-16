@@ -7,7 +7,7 @@ export const Welcome = () => {
   return (
     <>
       <div className="welcome__background" />
-      <div className="page__container">
+      <section className="page__container" id="home">
         <img src={profileImage} className="welcome__profile-image" />
         <div className="welcome__card">
           <span className="welcome__card-greeting">Tim Mendenhall</span>
@@ -16,7 +16,7 @@ export const Welcome = () => {
           </span>
         </div>
         <SocialBar />
-      </div>
+      </section>
     </>
   );
 };
