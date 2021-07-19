@@ -8,7 +8,11 @@ export const Welcome = () => {
     <>
       <div className="welcome__background" />
       <section className="page__container" id="home">
-        <img src={profileImage} className="welcome__profile-image" />
+        <img
+          src={profileImage}
+          className="welcome__profile-image"
+          alt="Tim Mendenhall"
+        />
         <div className="welcome__card">
           <span className="welcome__card-greeting">Tim Mendenhall</span>
           <span className="welcome__card-greeting-small">

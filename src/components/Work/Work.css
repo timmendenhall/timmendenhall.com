@@ -1,0 +1,19 @@
+.work__container {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.work__work-item {
+    flex-grow: 1;
+    flex-basis: 25%;
+    padding: 2%;
+}
+
+.work__work-image {
+    width: 5em;
+    height: 5em;
+    border-radius: 5%;
+    max-width: 100%;
+}

@@ -13,8 +13,8 @@ export const NavBar = () => {
       >
         <a href="#home">Home</a>
         <a href="#about">About</a>
-        <a href="#">Work</a>
-        <a href="#">Resume</a>
+        <a href="#work">Work</a>
+        <a href="#resume">Resume</a>
       </Scrollspy>
     </nav>
   );
