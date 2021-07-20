@@ -1,34 +1,30 @@
 import React from 'react';
 import './Work.css';
-import atiImage from './ati.jpg';
-import marsImage from './mars.png';
-import caesarsImage from './caesars.png';
-import vspImage from './vsp.jpg';
 
 export const Work = () => {
   return (
     <section className="page__container" id="work">
       <h1>Work</h1>
       <div className="work__container">
-        <div className="work__work-item">
-          <img
-            src={atiImage}
-            className="work__work-image"
-            alt="ATI Physical Therapy"
-          />
+        <div className="work__work-item work__ati">
+          <a href="#ati">
+            <span className="work__work-item-text">ATI Physical Therapy</span>
+          </a>
         </div>
-        <div className="work__work-item">
-          <img src={marsImage} className="work__work-image" alt="Mars" />
+        <div className="work__work-item work__mars">
+          <a href="#mars">
+            <span className="work__work-item-text">Mars</span>
+          </a>
         </div>
-        <div className="work__work-item">
-          <img
-            src={caesarsImage}
-            className="work__work-image"
-            alt="Caesars Entertainment"
-          />
+        <div className="work__work-item work__caesars">
+          <a href="#caesars">
+            <span className="work__work-item-text">Caesars</span>
+          </a>
         </div>
-        <div className="work__work-item">
-          <img src={vspImage} className="work__work-image" alt="VSP" />
+        <div className="work__work-item work__vsp">
+          <a href="#vsp">
+            <span className="work__work-item-text">VSP</span>
+          </a>
         </div>
       </div>
     </section>
