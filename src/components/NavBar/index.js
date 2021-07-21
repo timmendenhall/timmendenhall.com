@@ -6,15 +6,15 @@ export const NavBar = () => {
   return (
     <nav className="nav-bar__container">
       <Scrollspy
-        items={['home', 'about']}
+        items={['home', 'about', 'work']}
         currentClassName="active"
         componentTag={React.Fragment}
         offset={-1}
       >
-        <a href="#home">Home</a>
-        <a href="#about">About</a>
-        <a href="#work">Work</a>
-        <a href="#resume">Resume</a>
+        <a href="/#home">Home</a>
+        <a href="/#about">About</a>
+        <a href="/#work">Work</a>
+        <a href="/#resume">Resume</a>
       </Scrollspy>
     </nav>
   );

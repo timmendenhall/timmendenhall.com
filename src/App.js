@@ -1,17 +1,25 @@
+import { BrowserRouter as Router, Switch, Route, Link } from 'react-router-dom';
+
 import './App.css';
 import { NavBar } from './components/NavBar';
-import { Welcome } from './components/Welcome';
-import { About } from './components/About';
-import { Work } from './components/Work';
+import { Home } from './pages/Home';
+import { ATI } from './pages/work/ATI';
 
 function App() {
   return (
-    <div className="App">
-      <NavBar />
-      <Welcome />
-      <About />
-      <Work />
-    </div>
+    <Router>
+      <div className="App">
+        <NavBar />
+        <Switch>
+          <Route path="/ati">
+            <ATI />
+          </Route>
+          <Route path="/">
+            <Home />
+          </Route>
+        </Switch>
+      </div>
+    </Router>
   );
 }
 
