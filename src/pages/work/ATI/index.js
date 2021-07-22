@@ -1,9 +1,26 @@
 import React from 'react';
 
+import './ATI.css';
+import dashboardImage from './ati_dashboard.png';
+import hepImage from './ati_hep.png';
+import progressImage from './ati_progress.png';
+import { Carousel } from '../../../components/Carousel';
+
 export const ATI = () => {
   return (
     <section className="page__container">
       <h1>ATI Physical Therapy</h1>
+      <Carousel>
+        <div className="work__carousel-image">
+          <img src={dashboardImage} />
+        </div>
+        <div className="work__carousel-image">
+          <img src={hepImage} />
+        </div>
+        <div className="work__carousel-image">
+          <img src={progressImage} />
+        </div>
+      </Carousel>
       <p>
         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam nec odio
         auctor turpis feugiat pellentesque. Phasellus ornare urna dolor, id
