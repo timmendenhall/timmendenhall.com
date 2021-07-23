@@ -1,0 +1,13 @@
+.work__info-row {
+    display: flex;
+    flex-direction: row;
+    margin: 1rem;
+    align-items: center;
+}
+
+.work__info-value {
+    margin-left: 0.5em;
+    font-size: 0.8em;
+    line-height: 1.8em;
+    color: #d2d2d2;
+}

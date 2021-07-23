@@ -5,6 +5,8 @@ import dashboardImage from './ati_dashboard.png';
 import hepImage from './ati_hep.png';
 import progressImage from './ati_progress.png';
 import { Carousel } from '../../../components/Carousel';
+import { WorkInfo } from '../../../components/WorkInfo';
+import { WorkInfoRow } from '../../../components/WorkInfoRow';
 
 export const ATI = () => {
   return (
@@ -12,36 +14,32 @@ export const ATI = () => {
       <h1>ATI Physical Therapy</h1>
       <Carousel>
         <div className="work__carousel-image">
-          <img src={dashboardImage} />
+          <img src={dashboardImage} alt="Dashboard" />
         </div>
         <div className="work__carousel-image">
-          <img src={hepImage} />
+          <img src={hepImage} alt="Home Exercise Program" />
         </div>
         <div className="work__carousel-image">
-          <img src={progressImage} />
+          <img src={progressImage} alt="My Progress" />
         </div>
       </Carousel>
+      <WorkInfo>
+        <WorkInfoRow name="Role" value="Front-end Architect" />
+        <WorkInfoRow name="Platforms" value="iOS, Android, Web" />
+        <WorkInfoRow name="Technology" value="React Native, React Native Web" />
+        <WorkInfoRow name="Status" value="In development" />
+      </WorkInfo>
       <p>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam nec odio
-        auctor turpis feugiat pellentesque. Phasellus ornare urna dolor, id
-        euismod tortor posuere ut. Donec a orci ut massa suscipit ultrices at
-        nec augue. Integer posuere dui vel ex molestie porta. Mauris sed dapibus
-        mi, nec vestibulum risus. Praesent quis sollicitudin magna. Praesent in
-        lectus dapibus, scelerisque ipsum a, pulvinar nisi. Cras vitae nunc sed
-        ex consectetur convallis. Duis tempus, nulla eget bibendum sodales, odio
-        mauris tempus ligula, ut varius felis mi nec urna.
+        On this project I was tasked with creating the foundation of the project
+        in React Native / React Native Web. This included setting up the CI/CD
+        for native with Fastlane and AppCenter, Azure pipelines for building and
+        deployment, Azure B2C integration for user management and more.
       </p>
       <p>
-        Integer vel aliquam mauris, in tincidunt turpis. Ut tempus quam mauris,
-        at malesuada tellus iaculis eget. Vestibulum in pellentesque lorem.
-        Etiam velit felis, laoreet vitae eleifend id, bibendum ac libero. Nam
-        aliquet odio mi. Aenean in convallis est, vitae egestas dui. Integer
-        nisi orci, viverra at scelerisque vel, egestas cursus leo. Phasellus et
-        diam lacus. Vestibulum molestie sed elit eget tincidunt. Aenean
-        hendrerit libero pulvinar enim rutrum, sed malesuada odio fringilla.
-        Nulla facilisi. Phasellus in convallis lectus. Donec et augue ut dui
-        auctor bibendum in quis dui. Sed at imperdiet eros, at laoreet metus.
-        Praesent laoreet bibendum mauris vitae commodo.
+        I lead a team of three front end engineers, set the coding standards and
+        reviewed pull requests. I worked closely with the client, design,
+        developers, project managers and business analyst to ensure the team was
+        always unblocked and moving towards the target goals.
       </p>
     </section>
   );
