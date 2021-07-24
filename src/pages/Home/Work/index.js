@@ -1,6 +1,6 @@
 import React from 'react';
 import './Work.css';
-import { WorkItem } from '../WorkItem';
+import { WorkItem } from '../../../components/WorkItem';
 
 export const Work = () => {
   return (

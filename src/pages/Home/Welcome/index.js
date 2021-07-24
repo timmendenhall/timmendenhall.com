@@ -1,6 +1,6 @@
 import React from 'react';
 import './Welcome.css';
-import { SocialBar } from '../SocialBar';
+import { SocialBar } from '../../../components/SocialBar';
 import profileImage from './profile-pic.jpg';
 
 export const Welcome = () => {

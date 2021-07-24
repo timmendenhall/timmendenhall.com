@@ -1,6 +1,6 @@
-import { Welcome } from '../../components/Welcome';
-import { About } from '../../components/About';
-import { Work } from '../../components/Work';
+import { Welcome } from './Welcome';
+import { About } from './About';
+import { Work } from './Work';
 
 export const Home = () => {
   return (
