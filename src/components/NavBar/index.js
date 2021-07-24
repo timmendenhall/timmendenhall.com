@@ -6,7 +6,7 @@ export const NavBar = () => {
   return (
     <nav className="nav-bar__container">
       <Scrollspy
-        items={['home', 'about', 'work']}
+        items={['home', 'about', 'work', 'resume']}
         currentClassName="active"
         componentTag={React.Fragment}
         offset={-1}
