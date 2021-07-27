@@ -1,0 +1,33 @@
+.employment-info__container {
+    display: flex;
+    flex-direction: column;
+    margin-top: 2em;
+}
+
+.employment-info__company {
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 1.5em;
+
+}
+
+.employment-info__title {
+    font-family: 'Open Sans Condensed', sans-serif;
+    font-size: 1.2em;
+    color: #cccccc;
+}
+
+.employment-info__description {
+    max-width: 500px;
+    margin-top: 10px;
+    font-family: 'Open Sans Condensed', sans-serif;
+    font-size: 0.75em;
+    color: #adacac;
+}
+
+.employment-info__time {
+    max-width: 500px;
+    margin-top: 10px;
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 0.70em;
+    color: #cccccc;
+}

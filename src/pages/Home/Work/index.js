@@ -1,10 +1,10 @@
 import React, { useState, useMemo } from 'react';
 import './Work.css';
 import { WorkItem } from '../../../components/WorkItem';
-import { ATI } from '../../work/ATI';
-import { Mars } from '../../work/Mars';
-import { Caesars } from '../../work/Caesars';
-import { VSP } from '../../work/VSP';
+import { ATI } from './ATI';
+import { Mars } from './Mars';
+import { Caesars } from './Caesars';
+import { VSP } from './VSP';
 
 export const Work = () => {
   const [selectedWorkItem, setSelectedWorkItem] = useState('ati');

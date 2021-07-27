@@ -2,8 +2,8 @@ import React from 'react';
 
 import './VSP.css';
 
-import { WorkInfo } from '../../../components/WorkInfo';
-import { WorkInfoRow } from '../../../components/WorkInfoRow';
+import { WorkInfo } from '../../../../components/WorkInfo';
+import { WorkInfoRow } from '../../../../components/WorkInfoRow';
 
 export const VSP = () => {
   return (

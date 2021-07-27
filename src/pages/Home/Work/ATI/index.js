@@ -4,9 +4,9 @@ import './ATI.css';
 import dashboardImage from './ati_dashboard.png';
 import hepImage from './ati_hep.png';
 import progressImage from './ati_progress.png';
-import { Carousel } from '../../../components/Carousel';
-import { WorkInfo } from '../../../components/WorkInfo';
-import { WorkInfoRow } from '../../../components/WorkInfoRow';
+import { Carousel } from '../../../../components/Carousel';
+import { WorkInfo } from '../../../../components/WorkInfo';
+import { WorkInfoRow } from '../../../../components/WorkInfoRow';
 
 export const ATI = () => {
   return (
