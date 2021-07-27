@@ -10,8 +10,8 @@ import { WorkInfoRow } from '../../../components/WorkInfoRow';
 
 export const ATI = () => {
   return (
-    <section className="page__container">
-      <h1>ATI Physical Therapy</h1>
+    <section className="">
+      <h2>Customer Portal</h2>
       <Carousel>
         <div className="work__carousel-image">
           <img src={dashboardImage} alt="Dashboard" />

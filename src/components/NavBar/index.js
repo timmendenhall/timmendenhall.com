@@ -9,12 +9,12 @@ export const NavBar = () => {
         items={['home', 'about', 'work', 'resume']}
         currentClassName="active"
         componentTag={React.Fragment}
-        offset={-1}
+        offset={-10}
       >
-        <a href="/#home">Home</a>
-        <a href="/#about">About</a>
-        <a href="/#work">Work</a>
-        <a href="/#resume">Resume</a>
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#work">Work</a>
+        <a href="#resume">Resume</a>
       </Scrollspy>
     </nav>
   );

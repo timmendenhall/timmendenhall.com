@@ -1,13 +1,16 @@
 import React from 'react';
 import './WorkItem.css';
-import { Link } from 'react-router-dom';
 
-export const WorkItem = ({ shortName, longName }) => {
+export const WorkItem = ({ shortName, longName, onClick, isActive }) => {
   return (
-    <div className={`work__work-item work__${shortName}`}>
-      <Link to={`/${shortName}`}>
+    <div
+      className={`work__work-item work__${shortName} ${
+        isActive ? 'active' : ''
+      }`}
+    >
+      <button onClick={() => onClick(shortName)}>
         <span className="work__work-item-text">{longName}</span>
-      </Link>
+      </button>
     </div>
   );
 };

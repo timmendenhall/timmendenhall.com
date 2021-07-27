@@ -7,8 +7,7 @@ import { WorkInfoRow } from '../../../components/WorkInfoRow';
 
 export const Caesars = () => {
   return (
-    <section className="page__container">
-      <h1>Caesars</h1>
+    <section className="">
       <h2>Booking Engine</h2>
 
       <WorkInfo>

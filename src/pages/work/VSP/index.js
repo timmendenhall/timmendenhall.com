@@ -7,8 +7,7 @@ import { WorkInfoRow } from '../../../components/WorkInfoRow';
 
 export const VSP = () => {
   return (
-    <section className="page__container">
-      <h1>VSP</h1>
+    <section className="">
       <h2>Member Portal</h2>
 
       <WorkInfo>
