@@ -6,7 +6,7 @@ export const Footer = () => {
   const year = new Date().getFullYear();
   return (
     <div className="footer__container">
-      <img src={Logo}></img>
+      <img src={Logo} alt="Tim Mendenhall Logo"></img>
       <span>© {year} Tim Mendenhall</span>
     </div>
   );
