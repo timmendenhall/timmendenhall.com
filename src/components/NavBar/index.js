@@ -8,7 +8,7 @@ export const NavBar = () => {
       <Scrollspy
         items={['home', 'about', 'work', 'resume']}
         currentClassName="active"
-        componentTag={React.Fragment}
+        componentTag={'div'}
         offset={-10}
       >
         <a href="#home">Home</a>
