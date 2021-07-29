@@ -5,10 +5,17 @@
     flex-wrap: wrap;
 }
 
+.work__background {
+    background-color: #061727;
+    /*background-image: linear-gradient(to bottom left, #004144, #003a6d);*/
+}
+
 .work__work-item-content-container {
     max-width: 1080px;
+    min-height: 70vh;
+    text-align: justify;
     display: flex;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: center;
     flex-direction: column;
     background-color: #343a3f;

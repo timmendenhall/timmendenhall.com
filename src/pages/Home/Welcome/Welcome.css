@@ -1,6 +1,5 @@
 .welcome__background {
   min-height: 100vh;
-  /*width: 100vw;*/
   width: 100%;
   position: absolute;
   top: 0;
@@ -41,5 +40,5 @@
 .welcome__card-greeting-small {
   font-size: 2em;
   font-family: 'Open Sans Condensed', sans-serif;
-  color: #d2d2d2;
+  color: #c1c7cd;
 }

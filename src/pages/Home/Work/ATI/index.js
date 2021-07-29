@@ -29,6 +29,7 @@ export const ATI = () => {
         <WorkInfoRow name="Technology" value="React Native, React Native Web" />
         <WorkInfoRow name="Status" value="In development" />
       </WorkInfo>
+
       <p>
         On this project I was tasked with creating the foundation of the project
         in React Native / React Native Web. This included setting up the CI/CD

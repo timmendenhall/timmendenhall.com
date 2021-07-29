@@ -29,7 +29,7 @@ export const Work = () => {
   };
 
   return (
-    <section className="page__container" id="work">
+    <section className="page__container work__background" id="work">
       <h1>Work</h1>
       <div className="work__container">
         <WorkItem
