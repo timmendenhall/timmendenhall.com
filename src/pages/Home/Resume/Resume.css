@@ -1,4 +1,15 @@
 .resume__skills-container {
     font-family: 'Ubuntu', sans-serif;
     font-size: 0.70em;
+    text-align: justify;
+    margin-left: 1em;
+    margin-right: 1em;
+}
+
+.resume__container {
+    max-width: 1080px;
+}
+
+.resume__background {
+    background-image: linear-gradient(to bottom, #001141, #003a6d);
 }

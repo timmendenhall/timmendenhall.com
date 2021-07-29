@@ -1,13 +1,15 @@
 .footer__container {
-    height: 10em;
+    /*height: 10em;*/
     width: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
     font-size: 0.5em;
-    color: #767676;
-    margin-top: 20px;
+    color: #878d96;
+    padding-top: 150px;
+    padding-bottom: 20px;
+    background-color: #003a6d;
 }
 
 .footer__container img {

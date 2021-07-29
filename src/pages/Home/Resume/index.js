@@ -4,8 +4,9 @@ import { EmploymentInfo } from '../../../components/EmploymentInfo';
 
 export const Resume = () => {
   return (
-    <section className="page__container" id="resume">
-      <div className="about__container">
+    <section className="page__container resume__background" id="resume">
+      <div className="resume__container">
+        <h1>Resume</h1>
         <h2>Employment</h2>
         <EmploymentInfo
           company="Bounteous"
