@@ -1,10 +1,15 @@
 .about__container {
-
   padding-left: 2em;
   padding-right: 2em;
 }
 
+.about__background {
+  /*background-image: linear-gradient(to bottom right, #012749, #005d5d);*/
+  background-image: linear-gradient(to bottom right, #061727, #004144);
+}
+
 .about__content-container {
+  max-width: 1080px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -19,5 +24,5 @@
 
 .about__content-icon {
   font-size: 3em;
-  color: #8d8d8d;
+  color: #c1c7cd;
 }

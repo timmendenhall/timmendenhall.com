@@ -15,15 +15,16 @@ html {
 body {
   margin: 0;
   padding: 0;
-  font-family: 'Kanit', sans-serif;
+  font-family: 'Ubuntu', sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   background-color: #000000;
 }
 
 h1, h2, h3, h4, h5 {
-  margin-top: 2em;
+  margin-top: 1em;
   font-family: 'Ubuntu', sans-serif;
+  color: #dde1e6;
 }
 
 code {
@@ -33,7 +34,7 @@ code {
 
 .page__container {
   min-height: 100vh;
-  max-width: 1080px;
+  width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;

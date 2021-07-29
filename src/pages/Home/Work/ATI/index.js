@@ -10,7 +10,7 @@ import { WorkInfoRow } from '../../../../components/WorkInfoRow';
 
 export const ATI = () => {
   return (
-    <section className="">
+    <section>
       <h2>Customer Portal</h2>
       <Carousel>
         <div className="work__carousel-image">

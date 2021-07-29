@@ -11,9 +11,9 @@
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    background-color: #333333;
+    background-color: #343a3f;
     font-size: 0.75em;
     padding-left: 1em;
     padding-right: 1em;
-    border-radius: 5%;
+    border-radius: 15px;
 }

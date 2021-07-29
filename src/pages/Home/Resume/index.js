@@ -28,7 +28,7 @@ export const Resume = () => {
         <EmploymentInfo
           company="UnitedHealthcare"
           title="Technical Lead"
-          description="Angular 1 Web Development | AEM Development | Development Manager | Team Leader"
+          description="Angular 1 Web Development | AEM Development | Development Team Manager | Team Leader"
           time="2013 - 2015"
         />
         <EmploymentInfo
