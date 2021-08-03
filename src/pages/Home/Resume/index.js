@@ -1,12 +1,26 @@
 import React from 'react';
 import './Resume.css';
 import { EmploymentInfo } from '../../../components/EmploymentInfo';
+import { ButtonBar } from '../../../components/ButtonBar';
+import { Button } from '../../../components/Button';
 
 export const Resume = () => {
   return (
     <section className="page__container resume__background" id="resume">
       <div className="resume__container">
         <h1>Resume</h1>
+        <ButtonBar>
+          <Button
+            href="/Tim_Mendenhall_Resume.pdf"
+            icon="far fa-file-pdf"
+            text="PDF"
+          />
+          <Button
+            href="/Tim_Mendenhall_Resume.docx"
+            icon="far fa-file-word"
+            text="Word"
+          />
+        </ButtonBar>
         <h2>Employment</h2>
         <EmploymentInfo
           company="Bounteous"

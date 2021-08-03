@@ -1,6 +1,7 @@
 import React from 'react';
 import './Welcome.css';
-import { SocialBar } from '../../../components/SocialBar';
+import { ButtonBar } from '../../../components/ButtonBar';
+import { Button } from '../../../components/Button';
 import profileImage from './profile-pic.jpg';
 
 export const Welcome = () => {
@@ -19,7 +20,18 @@ export const Welcome = () => {
             Full-stack Web Developer
           </span>
         </div>
-        <SocialBar />
+        <ButtonBar>
+          <Button
+            href="https://github.com/timmendenhall"
+            icon="fab fa-github"
+            text="GitHub"
+          />
+          <Button
+            href="https://www.linkedin.com/in/timmendenhall/"
+            icon="fab fa-linkedin-in"
+            text="LinkedIn"
+          />
+        </ButtonBar>
       </section>
     </>
   );
