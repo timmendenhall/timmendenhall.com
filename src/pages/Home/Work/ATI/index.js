@@ -8,21 +8,26 @@ import { Carousel } from '../../../../components/Carousel';
 import { WorkInfo } from '../../../../components/WorkInfo';
 import { WorkInfoRow } from '../../../../components/WorkInfoRow';
 
+const carouselImages = [
+  {
+    src: dashboardImage,
+    alt: 'Dashboard',
+  },
+  {
+    src: hepImage,
+    alt: 'Home Exercise Program',
+  },
+  {
+    src: progressImage,
+    alt: 'My Progress',
+  },
+];
+
 export const ATI = () => {
   return (
     <section>
       <h2>Customer Portal</h2>
-      <Carousel>
-        <div className="work__carousel-image">
-          <img src={dashboardImage} alt="Dashboard" />
-        </div>
-        <div className="work__carousel-image">
-          <img src={hepImage} alt="Home Exercise Program" />
-        </div>
-        <div className="work__carousel-image">
-          <img src={progressImage} alt="My Progress" />
-        </div>
-      </Carousel>
+      <Carousel images={carouselImages} />
       <WorkInfo>
         <WorkInfoRow name="Role" value="Front-end Architect" />
         <WorkInfoRow name="Platforms" value="iOS, Android, Web" />

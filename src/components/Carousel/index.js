@@ -1,11 +1,38 @@
-import { Carousel as ReactResponsiveCarousel } from 'react-responsive-carousel';
-
 import './Carousel.css';
+import { useState } from 'react';
+import { useInterval } from '../../hooks/useInterval';
 
-export const Carousel = ({ children }) => {
+export const Carousel = ({ images }) => {
+  const [selectedImageIndex, setSelectedImageIndex] = useState(0);
+
+  // start a timer to change up the selected image index
+  useInterval(() => {
+    setSelectedImageIndex((selectedImageIndex + 1) % images.length);
+  }, 3500);
+
+  // No images are set, then don't render the carousel
+  if (!images || !Array.isArray(images)) {
+    return null;
+  }
+
+  // Get the selected image info
+  const { src, alt } = images[selectedImageIndex];
+
   return (
-    <ReactResponsiveCarousel infiniteLoop={true}>
-      {children}
-    </ReactResponsiveCarousel>
+    <div className="carousel__container">
+      <div className="carousel__image-container">
+        <img src={src} alt={alt} className="carousel__image" />
+      </div>
+      <div className="carousel__image-container">
+        {images.map(({ src, alt }, index) => (
+          <span
+            onClick={() => setSelectedImageIndex(index)}
+            className={`carousel__image-indicator ${
+              index === selectedImageIndex ? 'active' : ''
+            }`}
+          />
+        ))}
+      </div>
+    </div>
   );
 };
