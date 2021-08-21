@@ -8,7 +8,7 @@ export const Carousel = ({ images }) => {
   // start a timer to change up the selected image index
   useInterval(() => {
     setSelectedImageIndex((selectedImageIndex + 1) % images.length);
-  }, 3500);
+  }, 4000);
 
   // No images are set, then don't render the carousel
   if (!images || !Array.isArray(images)) {
@@ -23,7 +23,7 @@ export const Carousel = ({ images }) => {
       <div className="carousel__image-container">
         <img src={src} alt={alt} className="carousel__image" />
       </div>
-      <div className="carousel__image-container">
+      <div className="carousel__indicator-container">
         {images.map(({ src, alt }, index) => (
           <span
             onClick={() => setSelectedImageIndex(index)}
