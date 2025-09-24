@@ -31,7 +31,7 @@ export const Resume = () => {
                     company="Indeed"
                     title="Software Engineer II-2"
                     description="React Web Development | Datadog Logging and Monitoring | Feature Development From Figma Designs"
-                    time="2021 - present"
+                    time="2021 - 2025"
                 />
                 <EmploymentInfo
                     company="Bounteous"
@@ -52,7 +52,7 @@ export const Resume = () => {
                     time="2015 - 2016"
                 />
                 <EmploymentInfo
-                    company="UnitedHealthcare"
+                    company="Optum, Inc."
                     title="Technical Lead"
                     description="Angular 1 Web Development | AEM Development | Development Team Manager | Team Leader"
                     time="2013 - 2015"
