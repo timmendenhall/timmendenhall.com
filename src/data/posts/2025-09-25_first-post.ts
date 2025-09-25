@@ -1,3 +1,5 @@
+import { PostMeta } from '@/data/Post';
+
 const md = `
 # It's been a while
 
@@ -38,7 +40,7 @@ But, like with the idlesaur.com project, I plan on finding more ways to combine 
 That's all for now -- Thank you for reading and I hope you have a great day!
 `;
 
-export default function () {
+export default function (): PostMeta {
     return {
         slug: 'first-post',
         title: 'First post',
