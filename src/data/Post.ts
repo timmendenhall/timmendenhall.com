@@ -1,39 +1,40 @@
 import { promises as fs } from 'fs';
 import path from 'node:path';
 
-export interface Post {
+export interface PostMeta {
     slug: string;
     title: string;
-    content: string;
+    description: string;
     date: number;
+    md: string;
 }
 
 const postsDir = path.resolve('src', 'data', 'posts');
 
-export const getAllPosts = async (): Promise<Post[]> => {
+export const getAllPostsMeta = async (): Promise<PostMeta[]> => {
     try {
         const files = await fs.readdir(postsDir);
 
         const posts = [];
 
         for (const file of files) {
-            const contents = await fs.readFile(
-                path.join(postsDir, file),
-                'utf-8',
-            );
-            const post: Post = JSON.parse(contents);
-            posts.push(post);
+            const filePath = `./posts/${file}`;
+            // console.log('filepath ', filePath);
+            const postScript = await import(filePath);
+            posts.push(postScript.default());
         }
 
         return posts;
     } catch (error) {
-        console.error('getAllPosts - Error:', error);
+        console.error('getAllPostsMeta - Error:', error);
         return [];
     }
 };
 
-export const getPostBySlug = async (slug: string): Promise<Post | null> => {
-    const slugWithExt = slug + '.json';
+export const getPostMetaBySlug = async (
+    slug: string,
+): Promise<PostMeta | null> => {
+    const slugWithExt = slug + '.js';
     try {
         const files = await fs.readdir(postsDir);
         let foundFile;
@@ -50,12 +51,10 @@ export const getPostBySlug = async (slug: string): Promise<Post | null> => {
             return null;
         }
 
-        const contents = await fs.readFile(
-            path.join(postsDir, foundFile),
-            'utf-8',
-        );
+        const filePath = `./posts/${foundFile}`;
+        const postScript = await import(filePath);
 
-        return JSON.parse(contents) as Post;
+        return postScript.default() as PostMeta;
     } catch (error) {
         console.error('getPostBySlug - Error:', error);
         return null;
