@@ -1,4 +1,4 @@
-import { getPostBySlug } from '@/data/Post';
+import { getAllPosts, getPostBySlug } from '@/data/Post';
 
 export type Props = {
     params: Promise<{ slug: string }>;
@@ -13,6 +13,14 @@ export async function generateMetadata({ params }: Props) {
         title,
         description: post?.content,
     };
+}
+
+export async function generateStaticParams() {
+    const posts = await getAllPosts();
+
+    return posts.map((post) => ({
+        slug: post.slug,
+    }));
 }
 
 export default async function Post({ params }: Props) {
