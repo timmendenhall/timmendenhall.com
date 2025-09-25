@@ -1,63 +1,30 @@
-import { promises as fs } from 'fs';
-import path from 'node:path';
+import * as postModules from './posts';
 
-export interface Post {
+type PostModule = {
+    [key: string]: () => PostMeta;
+};
+const typedPostModules = postModules as PostModule;
+
+export interface PostMeta {
     slug: string;
     title: string;
-    content: string;
+    description: string;
     date: number;
+    md: string;
 }
 
-const postsDir = path.resolve('src', 'data', 'posts');
-
-export const getAllPosts = async (): Promise<Post[]> => {
-    try {
-        const files = await fs.readdir(postsDir);
-
-        const posts = [];
-
-        for (const file of files) {
-            const contents = await fs.readFile(
-                path.join(postsDir, file),
-                'utf-8',
-            );
-            const post: Post = JSON.parse(contents);
-            posts.push(post);
-        }
-
-        return posts;
-    } catch (error) {
-        console.error('getAllPosts - Error:', error);
-        return [];
+const postMetaMap: Map<string, PostMeta> = new Map<string, PostMeta>();
+for (const key in postModules) {
+    if (Object.prototype.hasOwnProperty.call(postModules, key)) {
+        const meta: PostMeta = typedPostModules[key]();
+        postMetaMap.set(meta.slug, meta);
     }
+}
+
+export const getAllPostsMeta = (): PostMeta[] => {
+    return postMetaMap.values().toArray();
 };
 
-export const getPostBySlug = async (slug: string): Promise<Post | null> => {
-    const slugWithExt = slug + '.json';
-    try {
-        const files = await fs.readdir(postsDir);
-        let foundFile;
-
-        for (const file of files) {
-            const [, fileSlug] = file.split('_');
-            if (fileSlug === slugWithExt) {
-                foundFile = file;
-                break;
-            }
-        }
-
-        if (!foundFile) {
-            return null;
-        }
-
-        const contents = await fs.readFile(
-            path.join(postsDir, foundFile),
-            'utf-8',
-        );
-
-        return JSON.parse(contents) as Post;
-    } catch (error) {
-        console.error('getPostBySlug - Error:', error);
-        return null;
-    }
+export const getPostMetaBySlug = (slug: string): PostMeta | undefined => {
+    return postMetaMap.get(slug);
 };

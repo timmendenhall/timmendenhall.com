@@ -1,8 +1,8 @@
 import Link from 'next/link';
-import { getAllPosts } from '@/data/Post';
+import { getAllPostsMeta } from '@/data/Post';
 
 export default async function Posts() {
-    const posts = await getAllPosts();
+    const posts = await getAllPostsMeta();
 
     return (
         <div className="mt-44 text-center">
