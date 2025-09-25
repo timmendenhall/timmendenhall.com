@@ -7,19 +7,18 @@ export type Props = {
 export async function generateMetadata({ params }: Props) {
     const { slug } = await params;
     const post = await getPostBySlug(slug);
+    const title = post?.title ? `${post.title} | Tim Mendenhall` : '';
 
     return {
-        title: post?.title,
+        title,
         description: post?.content,
     };
 }
 
 export default async function Post({ params }: Props) {
     const { slug } = await params;
-    console.log('slug', slug);
 
     const post = await getPostBySlug(slug);
-    console.log('post', post);
 
     if (!post) {
         return (
@@ -34,6 +33,9 @@ export default async function Post({ params }: Props) {
     return (
         <div className="mt-44 text-center">
             <h1 className="text-6xl">{post.title}</h1>
+            <p className="mt-10">
+                Posted on: {new Date(post.date).toLocaleDateString()}
+            </p>
             <p className="mt-10">{post.content}</p>
         </div>
     );

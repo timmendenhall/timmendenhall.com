@@ -5,6 +5,7 @@ export interface Post {
     slug: string;
     title: string;
     content: string;
+    date: number;
 }
 
 const postsDir = path.resolve('src', 'data', 'posts');
