@@ -2,24 +2,24 @@
 
 import React, { useState, useMemo } from 'react';
 import { WorkItem } from '@/components/WorkItem';
-// import { ATI } from './ATI';
-// import { Mars } from './Mars';
-// import { Caesars } from './Caesars';
-// import { VSP } from './VSP';
+import { ATI } from './ATI';
+import { Mars } from './Mars';
+import { Caesars } from './Caesars';
+import { VSP } from './VSP';
 
 export const Work = () => {
     const [selectedWorkItem, setSelectedWorkItem] = useState<string>('ati');
 
     const WorkContent = useMemo(() => {
         switch (selectedWorkItem) {
-            //   case 'ati':
-            //     return <ATI />;
-            //   case 'mars':
-            //     return <Mars />;
-            //   case 'caesars':
-            //     return <Caesars />;
-            //   case 'vsp':
-            //     return <VSP />;
+            case 'ati':
+                return <ATI />;
+            case 'mars':
+                return <Mars />;
+            case 'caesars':
+                return <Caesars />;
+            case 'vsp':
+                return <VSP />;
             default:
                 return null;
         }

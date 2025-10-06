@@ -1,7 +1,5 @@
 import React from 'react';
 
-import './Caesars.css';
-
 import { WorkInfo } from '@/components/WorkInfo';
 import { WorkInfoRow } from '@/components/WorkInfoRow';
 
