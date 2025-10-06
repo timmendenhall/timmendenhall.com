@@ -1,4 +1,5 @@
 import { About, Footer, Resume, Welcome } from '@/components';
+import { Work } from '@/components/Work';
 import { ubuntuSans } from '@/font';
 
 export default function Home() {
@@ -8,6 +9,7 @@ export default function Home() {
         >
             <Welcome />
             <About />
+            <Work />
             <Resume />
             <Footer />
         </main>

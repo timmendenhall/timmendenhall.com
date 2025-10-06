@@ -30,7 +30,7 @@ export const Resume = () => {
                 <EmploymentInfo
                     company="Indeed"
                     title="Software Engineer II-2"
-                    description="React Web Development | Datadog Logging and Monitoring | Feature Development From Figma Designs"
+                    description="React Web Development | Datadog Logging and Monitoring |Figma Designs | GraphQL | Spring Framework | Mentor"
                     time="2021 - 2025"
                 />
                 <EmploymentInfo
