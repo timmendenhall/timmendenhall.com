@@ -6,6 +6,7 @@ import { ATI } from './ATI';
 import { Mars } from './Mars';
 import { Caesars } from './Caesars';
 import { VSP } from './VSP';
+import { PageContainer } from '../PageContainer';
 
 export const Work = () => {
     const [selectedWorkItem, setSelectedWorkItem] = useState<string>('ati');
@@ -30,9 +31,9 @@ export const Work = () => {
     };
 
     return (
-        <section className="page__container work__background" id="work">
+        <PageContainer id="work">
             <h1>Work</h1>
-            <div className="work__container">
+            <div className="flex flex-row">
                 <WorkItem
                     shortName="ati"
                     longName="ATI Physical Therapy"
@@ -58,7 +59,9 @@ export const Work = () => {
                     isActive={'vsp' === selectedWorkItem}
                 />
             </div>
-            <div className="work__work-item-content-container">{WorkContent}</div>
-        </section>
+            <div className="work__work-item-content-container">
+                {WorkContent}
+            </div>
+        </PageContainer>
     );
 };

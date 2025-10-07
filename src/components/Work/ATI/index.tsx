@@ -13,7 +13,7 @@ export const ATI = () => {
     return (
         <section>
             <h2>Customer Portal</h2>
-            <Carousel>
+            {/* <Carousel>
                 <div className="work__carousel-image">
                     <Image src={dashboardImage} alt="Dashboard" />
                 </div>
@@ -23,7 +23,7 @@ export const ATI = () => {
                 <div className="work__carousel-image">
                     <Image src={progressImage} alt="My Progress" />
                 </div>
-            </Carousel>
+            </Carousel> */}
             <WorkInfo>
                 <WorkInfoRow name="Role" value="Front-end Architect" />
                 <WorkInfoRow name="Platforms" value="iOS, Android, Web" />
