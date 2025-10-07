@@ -1,7 +1,7 @@
 import React from 'react';
 
 export interface PageContainerProps {
-    id: string;
+    id?: string;
     children: React.ReactNode;
     className?: string;
 }
@@ -14,7 +14,7 @@ export const PageContainer = ({
     return (
         <section
             id={id}
-            className={`flex min-h-screen w-full flex-col items-center justify-center py-8 ${className}`}
+            className={`flex w-full flex-col items-center justify-center py-8 ${className}`}
         >
             {children}
         </section>

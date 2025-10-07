@@ -9,7 +9,7 @@ export const Resume = () => {
             id="resume"
         >
             <div className="mx-4 max-w-5xl">
-                <h1 className={`${recursive.className} pb-8 text-5xl`}>
+                <h1 className={`${recursive.className} py-8 text-5xl`}>
                     Resume
                 </h1>
                 <ButtonBar>

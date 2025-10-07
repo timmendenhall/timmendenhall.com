@@ -36,7 +36,7 @@ export const About = () => {
             id="about"
             className={`bg-linear-to-br from-sky-950 to-cyan-700`}
         >
-            <h1 className={`${recursive.className} pb-8 text-5xl`}>About</h1>
+            <h1 className={`${recursive.className} py-8 text-5xl`}>About</h1>
 
             <p className="w-full">
                 Hi! I&#39;m Tim Mendenhall. Here&#39;s a little bit about my

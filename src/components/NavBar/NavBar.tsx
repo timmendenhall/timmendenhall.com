@@ -19,10 +19,12 @@ export const NavItems: Array<NavBarLinkProps> = [
 
 export const NavBar = () => {
     return (
-        <nav className="fixed top-0 z-20 min-h-9 w-full bg-neutral-900 p-2 text-center text-neutral-400 shadow-md/30">
-            {NavItems.map((item: NavBarLinkProps) => (
-                <NavBarLink to={item.to} text={item.text} key={item.id} />
-            ))}
+        <nav className="sticky top-0 z-50 flex flex-1 items-center justify-center">
+            <div className="mx-auto flex max-w-6xl items-center justify-between bg-neutral-900 p-4 text-neutral-400 shadow-md/30">
+                {NavItems.map((item: NavBarLinkProps) => (
+                    <NavBarLink to={item.to} text={item.text} key={item.id} />
+                ))}
+            </div>
         </nav>
     );
 };

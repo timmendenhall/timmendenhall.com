@@ -34,11 +34,13 @@ export default function RootLayout({
                 <title>Tim Mendenhall</title>
             </head>
             <body
-                className={`${geistSans.variable} ${geistMono.variable} antialiased ${ubuntuSans.className} xs:text-sm flex min-h-screen flex-1 flex-col items-center justify-center bg-black text-center text-white md:text-2xl`}
+                className={`${geistSans.variable} ${geistMono.variable} antialiased ${ubuntuSans.className} xs:text-sm bg-black text-white md:text-2xl`}
             >
-                <NavBar />
-                {children}
-                <Footer />
+                <div className="flex min-h-screen flex-col">
+                    <NavBar />
+                    {children}
+                    <Footer />
+                </div>
             </body>
         </html>
     );
