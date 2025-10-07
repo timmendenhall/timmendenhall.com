@@ -17,8 +17,8 @@ export const VSP = () => {
 
             <p className="py-3">
                 This was my first project while employed for Bounteous. I was
-                able to help work in the Angular fresh build of VSP's member
-                portal. I got to take on new features such as customer
+                able to help work in the Angular fresh build of VSP&lsquo;s
+                member portal. I got to take on new features such as customer
                 registration, member information editing, social media
                 integration and more.
             </p>
