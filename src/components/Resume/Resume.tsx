@@ -6,7 +6,7 @@ export const Resume = () => {
     return (
         <PageContainer>
             <div className="mx-4 max-w-5xl text-center">
-                <h1 className={`py-8 text-5xl`}>Resume</h1>
+                <h1 className="py-8 text-5xl font-bold">Resume</h1>
                 <ButtonBar>
                     <Button
                         href="/Tim_Mendenhall_Resume.pdf"

@@ -6,10 +6,10 @@ export interface WorkInfoRowProps {
 }
 
 export const WorkInfoRow = ({ name, value }: WorkInfoRowProps) => {
-  return (
-    <div className="work__info-row">
-      <span className="work__info-name">{name}:</span>
-      <span className="work__info-value">{value}</span>
-    </div>
-  );
+    return (
+        <div className="flex flex-row justify-between gap-5">
+            <span className="font-bold">{name}:</span>
+            <span className="">{value}</span>
+        </div>
+    );
 };

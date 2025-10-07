@@ -32,8 +32,8 @@ export const Work = () => {
 
     return (
         <PageContainer>
-            <h1 className={`py-8 text-5xl`}>Work</h1>
-            <div className="flex flex-row flex-wrap justify-center gap-3">
+            <h1 className="py-8 text-5xl font-bold">Work</h1>
+            <div className="mb-3 flex flex-row flex-wrap justify-center gap-3">
                 <WorkItem
                     shortName="ati"
                     longName="ATI Physical Therapy"
@@ -59,7 +59,7 @@ export const Work = () => {
                     isActive={'vsp' === selectedWorkItem}
                 />
             </div>
-            <div className="work__work-item-content-container">
+            <div className="work__work-item-content-container max-w-2xl">
                 {WorkContent}
             </div>
         </PageContainer>

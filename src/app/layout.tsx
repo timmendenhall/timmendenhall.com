@@ -3,7 +3,7 @@ import { Geist, Geist_Mono } from 'next/font/google';
 import { ubuntuSans } from '@/font';
 import { Footer, NavBar } from '@/components';
 import './globals.css';
-
+import 'react-responsive-carousel/lib/styles/carousel.min.css';
 const geistSans = Geist({
     variable: '--font-geist-sans',
     subsets: ['latin'],

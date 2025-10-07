@@ -7,7 +7,7 @@ export const Carousel = ({
     children: ReactNode[] | undefined;
 }) => {
     return (
-        <ReactResponsiveCarousel infiniteLoop={true}>
+        <ReactResponsiveCarousel infiniteLoop={true} autoPlay>
             {children}
         </ReactResponsiveCarousel>
     );
