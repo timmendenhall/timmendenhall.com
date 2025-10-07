@@ -10,10 +10,10 @@ export interface NavBarLinkProps {
 }
 
 export const NavItems: Array<NavBarLinkProps> = [
-    { id: 'home', text: 'Home', to: '/#home' },
-    { id: 'about', text: 'About', to: '/#about' },
-    { id: 'work', text: 'Work', to: '/#work' },
-    { id: 'resume', text: 'Resume', to: '/#resume' },
+    { id: 'home', text: 'Home', to: '/' },
+    { id: 'about', text: 'About', to: '/about' },
+    { id: 'work', text: 'Work', to: '/work' },
+    { id: 'resume', text: 'Resume', to: '/resume' },
     { id: 'posts', text: 'Posts', to: '/posts' },
 ];
 

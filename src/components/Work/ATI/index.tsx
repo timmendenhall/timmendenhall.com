@@ -31,7 +31,6 @@ export const ATI = () => {
                     name="Technology"
                     value="React Native, React Native Web"
                 />
-                <WorkInfoRow name="Status" value="In development" />
             </WorkInfo>
 
             <p>

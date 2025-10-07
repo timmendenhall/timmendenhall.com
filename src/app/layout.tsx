@@ -1,7 +1,8 @@
 import type { Metadata } from 'next';
 import { Geist, Geist_Mono } from 'next/font/google';
+import { ubuntuSans } from '@/font';
+import { Footer, NavBar } from '@/components';
 import './globals.css';
-import { NavBar } from '@/components';
 
 const geistSans = Geist({
     variable: '--font-geist-sans',
@@ -33,10 +34,11 @@ export default function RootLayout({
                 <title>Tim Mendenhall</title>
             </head>
             <body
-                className={`${geistSans.variable} ${geistMono.variable} antialiased`}
+                className={`${geistSans.variable} ${geistMono.variable} antialiased ${ubuntuSans.className} xs:text-sm flex min-h-screen flex-1 flex-col items-center justify-center bg-black text-center text-white md:text-2xl`}
             >
                 <NavBar />
                 {children}
+                <Footer />
             </body>
         </html>
     );
