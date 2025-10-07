@@ -6,7 +6,7 @@ export interface PageContainerProps {
 
 export const PageContainer = ({ children }: PageContainerProps) => {
     return (
-        <section className={`flex flex-1 flex-col items-center p-3`}>
+        <section className={`mt-3 flex flex-1 flex-col items-center p-3`}>
             {children}
         </section>
     );
