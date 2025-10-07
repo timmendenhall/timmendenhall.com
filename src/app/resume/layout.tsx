@@ -1,9 +1,9 @@
 import type { Metadata } from 'next';
 
 export const metadata: Metadata = {
-    title: "Tim Mendenhall's Blog Posts",
+    title: "Tim Mendenhall's Resume",
     description:
-        "Tim Mendenhall's Blog Posts -- The rantings and ravings of a software engineer.",
+        "Tim Mendenhall's Resume -- Check out where I've worked previously or hire me and add your company to this list! :)",
 };
 
 export default function Layout({
@@ -12,7 +12,7 @@ export default function Layout({
     children: React.ReactNode;
 }>) {
     return (
-        <div className="flex flex-1 flex-col bg-linear-to-br from-stone-700 to-stone-950 bg-cover">
+        <div className="bg-linear-to-br from-neutral-700 to-neutral-950">
             {children}
         </div>
     );

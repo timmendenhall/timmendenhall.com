@@ -1,21 +1,12 @@
 import React from 'react';
 
 export interface PageContainerProps {
-    id: string;
     children: React.ReactNode;
-    className?: string;
 }
 
-export const PageContainer = ({
-    id,
-    children,
-    className,
-}: PageContainerProps) => {
+export const PageContainer = ({ children }: PageContainerProps) => {
     return (
-        <section
-            id={id}
-            className={`flex min-h-screen w-full flex-col items-center justify-center py-8 ${className}`}
-        >
+        <section className={`flex flex-1 flex-col items-center p-3`}>
             {children}
         </section>
     );

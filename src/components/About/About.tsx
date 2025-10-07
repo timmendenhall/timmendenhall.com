@@ -1,6 +1,5 @@
 import React from 'react';
 import { PageContainer } from '@/components';
-import { recursive } from '@/font';
 import {
     FaGamepad,
     FaBook,
@@ -25,74 +24,64 @@ export interface AboutSectionContainerProps {
 }
 
 export const AboutSectionContainer = ({ children }: IconContainerProps) => (
-    <div className="flex max-w-5xl flex-row items-center justify-center-safe p-6 text-justify">
+    <div className="flex flex-row items-center justify-between gap-3 p-3 text-justify">
         {children}
     </div>
 );
 
 export const About = () => {
     return (
-        <PageContainer
-            id="about"
-            className={`bg-linear-to-br from-sky-950 to-cyan-700`}
-        >
-            <h1 className={`${recursive.className} pb-8 text-5xl`}>About</h1>
+        <PageContainer>
+            <h1 className="py-8 text-5xl font-bold">About</h1>
 
-            <p className="w-full">
-                Hi! I&#39;m Tim Mendenhall. Here&#39;s a little bit about my
-                journey.
-            </p>
+            <div className="max-w-2xl">
+                <AboutSectionContainer>
+                    Hi! I&#39;m Tim Mendenhall. Here&#39;s a little bit about my
+                    journey.
+                </AboutSectionContainer>
 
-            <AboutSectionContainer>
-                <p className="w-full">
+                <AboutSectionContainer>
                     When I was young my dad got me my very first video game,
                     Super Mario Brothers on the original Nintendo. This sparked
                     my interest in gaming and I&#39;m still quite a passionate
                     gamer and indie game developer in my spare time.
-                </p>
+                    <IconContainer>
+                        <FaGamepad size={ICON_SIZE} />
+                    </IconContainer>
+                </AboutSectionContainer>
 
-                <IconContainer>
-                    <FaGamepad size={ICON_SIZE} />
-                </IconContainer>
-            </AboutSectionContainer>
-
-            <AboutSectionContainer>
-                <IconContainer>
-                    <FaBook size={ICON_SIZE} />
-                </IconContainer>
-                <p className="w-full">
+                <AboutSectionContainer>
+                    <IconContainer>
+                        <FaBook size={ICON_SIZE} />
+                    </IconContainer>
                     In middle school a friend showed me his website he made for
                     a Starcraft gaming group he ran. I was so thrilled seeing
                     his original art, HTML and CSS skills in action that I just
                     knew I had to do it too. The very next day I went to the
                     library and rented &#34;HTML For Dummies&#34; unknowingly
                     starting my web development career.
-                </p>
-            </AboutSectionContainer>
+                </AboutSectionContainer>
 
-            <AboutSectionContainer>
-                <p className="w-full">
+                <AboutSectionContainer>
                     By high school I got a graphing calculator, the TI-83. This
                     changed my world forever with game development. I spent all
                     of my spare time in class making small games in Basic on the
                     calculator.
-                </p>
-                <IconContainer>
-                    <FaCalculator size={ICON_SIZE} />
-                </IconContainer>
-            </AboutSectionContainer>
+                    <IconContainer>
+                        <FaCalculator size={ICON_SIZE} />
+                    </IconContainer>
+                </AboutSectionContainer>
 
-            <AboutSectionContainer>
-                <IconContainer>
-                    <FaUserGraduate size={ICON_SIZE} />
-                </IconContainer>
-                <p className="w-full">
+                <AboutSectionContainer>
+                    <IconContainer>
+                        <FaUserGraduate size={ICON_SIZE} />
+                    </IconContainer>
                     After high school, I knew I wanted to be a game developer!
                     So, I went to college and got my degree in Game and
                     Simulation Programming. I learned a lot in a short amount of
                     time making a few small game projects along the way.
-                </p>
-            </AboutSectionContainer>
+                </AboutSectionContainer>
+            </div>
         </PageContainer>
     );
 };

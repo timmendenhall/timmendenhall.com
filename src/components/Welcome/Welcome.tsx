@@ -6,20 +6,22 @@ import profileImage from './profile-pic.jpg';
 
 export const Welcome = () => {
     return (
-        <>
-            <div className="absolute top-0 left-0 min-h-screen w-full bg-[url(/img/background-welcome.jpg)] bg-cover blur-md" />
-            <PageContainer id="home">
+        <div className="flex items-center justify-center overflow-hidden">
+            <div className="absolute top-0 left-0 h-full w-full bg-[url(/img/background-welcome.jpg)] bg-cover blur-md" />
+            <PageContainer>
                 <Image
                     src={profileImage}
-                    className="z-10 mt-5 w-48 rounded-full border-1 border-white shadow"
+                    className="z-10 mt-5 w-32 rounded-full border-1 border-white shadow sm:w-48"
                     alt="Tim Mendenhall"
                 />
-                <div className="relative my-8 flex flex-col items-center justify-center rounded-xl bg-black/70 p-5 text-white shadow-lg/30">
-                    <span className={`${ubuntuSans.className} text-7xl`}>
+                <div className="z-10 mx-3 mt-8 flex flex-col items-center justify-center rounded-xl bg-black/70 p-3 text-center text-white shadow-lg/30">
+                    <span
+                        className={`${ubuntuSans.className} text-5xl sm:text-7xl`}
+                    >
                         Tim Mendenhall
                     </span>
                     <span
-                        className={`${robotoCondensed.className} text-5xl text-gray-300`}
+                        className={`${robotoCondensed.className} text-3xl text-gray-300 sm:text-5xl`}
                     >
                         Full-stack Web Developer
                     </span>
@@ -35,8 +37,13 @@ export const Welcome = () => {
                         icon="linkedin"
                         text="LinkedIn"
                     />
+                    <Button
+                        href="/Tim_Mendenhall_Resume.pdf"
+                        icon="pdf"
+                        text="Resume"
+                    />
                 </ButtonBar>
             </PageContainer>
-        </>
+        </div>
     );
 };

@@ -1,6 +1,7 @@
 import markdownit from 'markdown-it';
 
 import { getAllPostsMeta, getPostMetaBySlug } from '@/data/Post';
+import { PageContainer } from '@/components';
 
 export type Props = {
     params: Promise<{ slug: string }>;
@@ -31,7 +32,7 @@ export default async function Post({ params }: Props) {
 
     if (!post) {
         return (
-            <div className="mt-44 text-center">
+            <div className="text-center">
                 <main>
                     <h1>Post Not Found</h1>
                 </main>
@@ -43,7 +44,7 @@ export default async function Post({ params }: Props) {
     const content = md.render(post.md);
 
     return (
-        <div className="flex flex-col items-center py-20">
+        <PageContainer>
             <h1 className="text-6xl">{post.title}</h1>
             <div className="mt-3">
                 Posted on: {new Date(post.date).toLocaleDateString()}
@@ -52,6 +53,6 @@ export default async function Post({ params }: Props) {
                 className="prose prose-invert mt-10"
                 dangerouslySetInnerHTML={{ __html: content }}
             />
-        </div>
+        </PageContainer>
     );
 }

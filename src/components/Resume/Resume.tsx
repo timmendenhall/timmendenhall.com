@@ -4,14 +4,9 @@ import { recursive } from '@/font';
 
 export const Resume = () => {
     return (
-        <PageContainer
-            className="bg-linear-to-b from-blue-950 to-cyan-900 px-40"
-            id="resume"
-        >
-            <div className="mx-4 max-w-5xl">
-                <h1 className={`${recursive.className} pb-8 text-5xl`}>
-                    Resume
-                </h1>
+        <PageContainer>
+            <div className="mx-4 max-w-5xl text-center">
+                <h1 className="py-8 text-5xl font-bold">Resume</h1>
                 <ButtonBar>
                     <Button
                         href="/Tim_Mendenhall_Resume.pdf"
@@ -30,7 +25,7 @@ export const Resume = () => {
                 <EmploymentInfo
                     company="Indeed"
                     title="Software Engineer II-2"
-                    description="React Web Development | Datadog Logging and Monitoring | Feature Development From Figma Designs"
+                    description="React Web Development | Datadog Logging and Monitoring |Figma Designs | GraphQL | Spring Framework | Mentor"
                     time="2021 - 2025"
                 />
                 <EmploymentInfo
