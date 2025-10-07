@@ -9,6 +9,7 @@ export const VSP = () => {
             <h2 className="text-3xl font-bold">Member Portal</h2>
 
             <WorkInfo>
+                <WorkInfoRow name="Client" value="VSP - Bounteous Client" />
                 <WorkInfoRow name="Role" value="Front-end Developer" />
                 <WorkInfoRow name="Platform" value="Web" />
                 <WorkInfoRow name="Technology" value="Angular 5+" />

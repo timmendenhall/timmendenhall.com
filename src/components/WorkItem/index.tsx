@@ -39,9 +39,13 @@ export const WorkItem = ({
         isActive ? 'border-white' : undefined,
     );
 
+    const backgroundOpacity = isActive ? 'opacity-0' : 'opacity-55';
+
     return (
         <div onClick={() => onClick(shortName)} className={mergedClasses}>
-            <div className="absolute inset-0 z-10 flex bg-black opacity-55 transition-opacity duration-300 group-hover:opacity-0"></div>
+            <div
+                className={`absolute inset-0 z-10 flex bg-black ${backgroundOpacity} transition-opacity duration-300 group-hover:opacity-0`}
+            ></div>
 
             <Image
                 src={getImage(shortName)}
@@ -49,10 +53,6 @@ export const WorkItem = ({
                 fill
                 className="object-contain object-center"
             />
-
-            <div className="absolute inset-0 z-20 flex items-center justify-center text-center opacity-100 group-hover:opacity-0">
-                {longName}
-            </div>
         </div>
     );
 };

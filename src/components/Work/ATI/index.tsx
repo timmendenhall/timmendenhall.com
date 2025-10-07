@@ -26,6 +26,10 @@ export const ATI = () => {
 
             <h2 className="text-3xl font-bold">Customer Portal</h2>
             <WorkInfo>
+                <WorkInfoRow
+                    name="Client"
+                    value="ATI Physical Therapy - Bounteous Client"
+                />
                 <WorkInfoRow name="Role" value="Front-end Architect" />
                 <WorkInfoRow name="Platforms" value="iOS, Android, Web" />
                 <WorkInfoRow

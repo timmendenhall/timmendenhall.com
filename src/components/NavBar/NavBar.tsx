@@ -1,6 +1,8 @@
 'use client';
 
 import React from 'react';
+import Image from 'next/image';
+import Logo from '@/../public/logo192.png';
 import { NavBarLink } from '@/components/NavBar/NavBarLink';
 
 export interface NavBarLinkProps {
@@ -19,8 +21,13 @@ export const NavItems: Array<NavBarLinkProps> = [
 
 export const NavBar = () => {
     return (
-        <nav className="sticky top-0 z-50 flex bg-neutral-900 shadow-md/30">
-            <div className="mx-auto flex items-center justify-between p-4 text-neutral-400">
+        <nav className="sticky top-0 z-50 flex items-center bg-neutral-900 shadow-md/30">
+            <Image
+                src={Logo}
+                alt="Tim Mendenhall Logo"
+                className="ml-3 h-8 w-8"
+            />
+            <div className="mx-auto flex items-center justify-between text-neutral-400">
                 {NavItems.map((item: NavBarLinkProps) => (
                     <NavBarLink to={item.to} text={item.text} key={item.id} />
                 ))}

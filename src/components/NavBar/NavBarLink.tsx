@@ -12,7 +12,7 @@ export const NavBarLink = ({ to, text, active }: NavBarLinkProps) => {
     return (
         <Link
             href={to}
-            className={`${openSans.className} m-3 gap-2 underline-offset-8 hover:text-white hover:underline ${active ? 'text-white underline' : 'text-neutral-400'}`}
+            className={`${openSans.className} sm:text-md m-3 gap-2 text-sm underline-offset-8 hover:text-white hover:underline ${active ? 'text-white underline' : 'text-neutral-400'}`}
         >
             {text}
         </Link>

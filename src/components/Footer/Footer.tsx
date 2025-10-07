@@ -1,6 +1,6 @@
 import React from 'react';
 import Image from 'next/image';
-import Logo from './logo192.png';
+import Logo from '@/../public/logo192.png';
 
 export const Footer = () => {
     const year = new Date().getFullYear();

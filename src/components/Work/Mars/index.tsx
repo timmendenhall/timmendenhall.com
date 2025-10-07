@@ -9,6 +9,7 @@ export const Mars = () => {
             <h2 className="text-3xl font-bold">Treat Town</h2>
 
             <WorkInfo>
+                <WorkInfoRow name="Client" value="Mars - Bounteous Client" />
                 <WorkInfoRow name="Role" value="Front-end Architect" />
                 <WorkInfoRow name="Platforms" value="iOS, Android, Web" />
                 <WorkInfoRow
