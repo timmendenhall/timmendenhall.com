@@ -1,5 +1,4 @@
-import { About, Footer, Resume, Welcome } from '@/components';
-import { Work } from '@/components/Work';
+import { Welcome } from '@/components';
 
 export default function Home() {
     return (
