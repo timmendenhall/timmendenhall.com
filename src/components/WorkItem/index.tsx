@@ -1,6 +1,9 @@
 import React from 'react';
 import { twMerge } from 'tailwind-merge';
-import ati from './ati.png';
+import ati from './ati.jpg';
+import caesars from './caesars.png';
+import mars from './mars.png';
+import vsp from './vsp.jpg';
 import Image from 'next/image';
 
 export interface WorkItemProps {
@@ -10,6 +13,21 @@ export interface WorkItemProps {
     onClick: (name: string) => void;
 }
 
+const getImage = (shortName: string) => {
+    switch (shortName) {
+        case 'ati':
+            return ati;
+        case 'caesars':
+            return caesars;
+        case 'mars':
+            return mars;
+        case 'vsp':
+            return vsp;
+        default:
+            return ati;
+    }
+};
+
 export const WorkItem = ({
     shortName,
     longName,
@@ -17,23 +35,22 @@ export const WorkItem = ({
     isActive,
 }: WorkItemProps) => {
     const mergedClasses = twMerge(
-        'm-1 flex flex-1 rounded-sm border-2 border-black bg-contain bg-center bg-no-repeat',
+        'group relative h-36 w-36 cursor-pointer overflow-hidden rounded-sm border-2 border-black bg-white',
         isActive ? 'border-white' : undefined,
-        // `bg-[url(/img/work/${shortName}.png)]`,
     );
 
     return (
-        <div
-            onClick={() => onClick(shortName)}
-            className="relative h-36 w-36 cursor-pointer border-0"
-        >
+        <div onClick={() => onClick(shortName)} className={mergedClasses}>
+            <div className="absolute inset-0 z-10 flex bg-black opacity-55 transition-opacity duration-300 group-hover:opacity-0"></div>
+
             <Image
-                src={ati}
+                src={getImage(shortName)}
                 alt={longName}
-                className="h-fit w-fit transition-all duration-300 hover:opacity-0"
+                fill
+                className="object-contain object-center"
             />
 
-            <div className="absolute top-1/2 left-1/2 -translate-1/2 transition-all duration-300 hover:opacity-0">
+            <div className="absolute inset-0 z-20 flex items-center justify-center opacity-100 group-hover:opacity-0">
                 {longName}
             </div>
         </div>
