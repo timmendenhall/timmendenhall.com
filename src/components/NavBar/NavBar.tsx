@@ -19,8 +19,8 @@ export const NavItems: Array<NavBarLinkProps> = [
 
 export const NavBar = () => {
     return (
-        <nav className="sticky top-0 z-50 flex flex-1 items-center justify-center">
-            <div className="mx-auto flex max-w-6xl items-center justify-between bg-neutral-900 p-4 text-neutral-400 shadow-md/30">
+        <nav className="sticky top-0 z-50 flex bg-neutral-900 shadow-md/30">
+            <div className="mx-auto flex items-center justify-between p-4 text-neutral-400">
                 {NavItems.map((item: NavBarLinkProps) => (
                     <NavBarLink to={item.to} text={item.text} key={item.id} />
                 ))}

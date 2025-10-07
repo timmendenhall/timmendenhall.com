@@ -5,5 +5,9 @@ export interface ButtonBarProps {
 }
 
 export const ButtonBar = ({ children }: ButtonBarProps) => {
-    return <div className="z-0 flex flex-row justify-center">{children}</div>;
+    return (
+        <div className="z-0 mt-3 flex flex-row flex-wrap justify-center gap-3">
+            {children}
+        </div>
+    );
 };

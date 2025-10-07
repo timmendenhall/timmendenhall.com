@@ -37,7 +37,7 @@ export const Button = ({
     return (
         <a
             href={href}
-            className={`${merriweatherSans.className} m-4 flex w-40 flex-row items-center justify-evenly rounded-md border-2 border-white bg-black/30 px-1 py-2 text-white no-underline transition-colors duration-500 ease-out hover:bg-black`}
+            className={`${merriweatherSans.className} flex flex-row items-center justify-evenly gap-2 rounded-md border-2 border-white bg-black/30 p-2 text-white no-underline transition-colors duration-500 ease-out hover:bg-black`}
             target={target}
             rel="noreferrer"
         >

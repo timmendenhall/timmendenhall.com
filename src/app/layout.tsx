@@ -25,7 +25,7 @@ export default function RootLayout({
     children: React.ReactNode;
 }>) {
     return (
-        <html lang="en" className="scroll-smooth">
+        <html lang="en" className="overflow-x-hidden scroll-smooth">
             <head>
                 <meta
                     name="viewport"
@@ -34,7 +34,7 @@ export default function RootLayout({
                 <title>Tim Mendenhall</title>
             </head>
             <body
-                className={`${geistSans.variable} ${geistMono.variable} antialiased ${ubuntuSans.className} xs:text-sm bg-black text-white md:text-2xl`}
+                className={`${geistSans.variable} ${geistMono.variable} antialiased ${ubuntuSans.className} xs:text-sm overflow-x-hidden bg-black text-white md:text-2xl`}
             >
                 <div className="flex min-h-screen flex-col">
                     <NavBar />
