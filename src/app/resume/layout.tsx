@@ -11,5 +11,9 @@ export default function Layout({
 }: Readonly<{
     children: React.ReactNode;
 }>) {
-    return <div>{children}</div>;
+    return (
+        <div className="bg-linear-to-b from-blue-950 to-cyan-900">
+            {children}
+        </div>
+    );
 }

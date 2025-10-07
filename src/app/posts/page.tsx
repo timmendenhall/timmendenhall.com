@@ -1,12 +1,13 @@
 import Link from 'next/link';
 import { getAllPostsMeta } from '@/data/Post';
+import { PageContainer } from '@/components';
 
 export default async function Posts() {
     const posts = await getAllPostsMeta();
 
     return (
-        <div className="mt-44 text-center">
-            <h1 className="mb-10 text-6xl">Posts</h1>
+        <PageContainer>
+            <h1 className={`py-8 text-5xl`}>Posts</h1>
             <div className="flex flex-col items-center justify-center">
                 {posts.map((post) => (
                     <Link
@@ -19,6 +20,6 @@ export default async function Posts() {
                     </Link>
                 ))}
             </div>
-        </div>
+        </PageContainer>
     );
 }

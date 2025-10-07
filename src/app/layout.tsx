@@ -15,7 +15,7 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-    title: 'Tim Mendenhall',
+    title: 'Tim Mendenhall - Full-stack Web Developer',
     description: "Tim Mendenhall's portfolio and blog site.",
 };
 

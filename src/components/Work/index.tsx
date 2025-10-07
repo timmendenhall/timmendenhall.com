@@ -31,8 +31,8 @@ export const Work = () => {
     };
 
     return (
-        <PageContainer id="work">
-            <h1>Work</h1>
+        <PageContainer>
+            <h1 className={`py-8 text-5xl`}>Work</h1>
             <div className="flex flex-row flex-wrap justify-center gap-3">
                 <WorkItem
                     shortName="ati"

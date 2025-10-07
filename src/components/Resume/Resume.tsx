@@ -4,14 +4,9 @@ import { recursive } from '@/font';
 
 export const Resume = () => {
     return (
-        <PageContainer
-            className="bg-linear-to-b from-blue-950 to-cyan-900 px-40"
-            id="resume"
-        >
-            <div className="mx-4 max-w-5xl">
-                <h1 className={`${recursive.className} py-8 text-5xl`}>
-                    Resume
-                </h1>
+        <PageContainer>
+            <div className="mx-4 max-w-5xl text-center">
+                <h1 className={`py-8 text-5xl`}>Resume</h1>
                 <ButtonBar>
                     <Button
                         href="/Tim_Mendenhall_Resume.pdf"

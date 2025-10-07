@@ -50,7 +50,7 @@ export const WorkItem = ({
                 className="object-contain object-center"
             />
 
-            <div className="absolute inset-0 z-20 flex items-center justify-center opacity-100 group-hover:opacity-0">
+            <div className="absolute inset-0 z-20 flex items-center justify-center text-center opacity-100 group-hover:opacity-0">
                 {longName}
             </div>
         </div>

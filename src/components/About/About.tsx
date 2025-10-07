@@ -1,6 +1,5 @@
 import React from 'react';
 import { PageContainer } from '@/components';
-import { recursive } from '@/font';
 import {
     FaGamepad,
     FaBook,
@@ -25,20 +24,17 @@ export interface AboutSectionContainerProps {
 }
 
 export const AboutSectionContainer = ({ children }: IconContainerProps) => (
-    <div className="flex max-w-5xl flex-row items-center justify-center-safe p-6 text-justify">
+    <div className="flex flex-row items-center justify-center-safe p-3 text-justify">
         {children}
     </div>
 );
 
 export const About = () => {
     return (
-        <PageContainer
-            id="about"
-            className={`bg-linear-to-br from-sky-950 to-cyan-700`}
-        >
-            <h1 className={`${recursive.className} py-8 text-5xl`}>About</h1>
+        <PageContainer>
+            <h1 className={`py-8 text-5xl`}>About</h1>
 
-            <p className="w-full">
+            <p className="w-full p-3">
                 Hi! I&#39;m Tim Mendenhall. Here&#39;s a little bit about my
                 journey.
             </p>
