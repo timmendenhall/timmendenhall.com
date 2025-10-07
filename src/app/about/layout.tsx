@@ -11,7 +11,7 @@ export default function Layout({
     children: React.ReactNode;
 }>) {
     return (
-        <div className="flex flex-1 flex-col bg-linear-to-br from-sky-950 to-cyan-700 bg-cover">
+        <div className="flex flex-1 flex-col bg-linear-to-br from-sky-700 to-sky-950 bg-cover">
             {children}
         </div>
     );

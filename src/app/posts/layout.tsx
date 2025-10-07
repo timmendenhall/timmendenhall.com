@@ -11,5 +11,9 @@ export default function Layout({
 }: Readonly<{
     children: React.ReactNode;
 }>) {
-    return <div className="flex flex-1 flex-col">{children}</div>;
+    return (
+        <div className="flex flex-1 flex-col bg-linear-to-br from-stone-700 to-stone-950 bg-cover">
+            {children}
+        </div>
+    );
 }

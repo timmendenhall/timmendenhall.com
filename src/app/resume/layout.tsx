@@ -12,7 +12,7 @@ export default function Layout({
     children: React.ReactNode;
 }>) {
     return (
-        <div className="bg-linear-to-b from-blue-950 to-cyan-900">
+        <div className="bg-linear-to-br from-neutral-700 to-neutral-950">
             {children}
         </div>
     );

@@ -14,7 +14,7 @@ export const Welcome = () => {
                     className="z-10 mt-5 w-32 rounded-full border-1 border-white shadow sm:w-48"
                     alt="Tim Mendenhall"
                 />
-                <div className="mx-3 mt-8 flex flex-col items-center justify-center rounded-xl bg-black/70 p-3 text-center text-white shadow-lg/30">
+                <div className="z-10 mx-3 mt-8 flex flex-col items-center justify-center rounded-xl bg-black/70 p-3 text-center text-white shadow-lg/30">
                     <span
                         className={`${ubuntuSans.className} text-5xl sm:text-7xl`}
                     >
