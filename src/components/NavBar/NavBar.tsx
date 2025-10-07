@@ -21,13 +21,13 @@ export const NavItems: Array<NavBarLinkProps> = [
 
 export const NavBar = () => {
     return (
-        <nav className="sticky top-0 z-50 flex items-center bg-neutral-900 shadow-md/30">
+        <nav className="fixed top-0 right-0 left-0 z-50 flex items-center justify-center bg-neutral-900 shadow-md/30">
             <Image
                 src={Logo}
                 alt="Tim Mendenhall Logo"
-                className="ml-3 h-8 w-8"
+                className="mx-3 h-8 w-8"
             />
-            <div className="mx-auto flex items-center justify-between text-neutral-400">
+            <div className="flex items-center justify-between text-neutral-400">
                 {NavItems.map((item: NavBarLinkProps) => (
                     <NavBarLink to={item.to} text={item.text} key={item.id} />
                 ))}
