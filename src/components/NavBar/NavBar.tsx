@@ -16,7 +16,6 @@ export const NavItems: Array<NavBarLinkProps> = [
     { id: 'about', text: 'About', to: '/about' },
     { id: 'work', text: 'Work', to: '/work' },
     { id: 'resume', text: 'Resume', to: '/resume' },
-    { id: 'posts', text: 'Posts', to: '/posts' },
 ];
 
 export const NavBar = () => {
