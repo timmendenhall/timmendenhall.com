@@ -23,9 +23,15 @@ export const Resume = () => {
                     Employment
                 </h2>
                 <EmploymentInfo
+                    company="Blue Collar Customs"
+                    title="Senior Full-stack Developer"
+                    description="React | Laravel PHP | MySQL | Optimizing and recreating a Customer and Inventory Management (CIM) system"
+                    time="2026 - current"
+                />
+                <EmploymentInfo
                     company="Indeed"
                     title="Software Engineer II-2"
-                    description="React Web Development | Datadog Logging and Monitoring |Figma Designs | GraphQL | Spring Framework | Mentor"
+                    description="React Web Development | Datadog Logging and Monitoring | Figma Designs | GraphQL | Spring Framework | Mentor"
                     time="2021 - 2025"
                 />
                 <EmploymentInfo
@@ -83,7 +89,7 @@ export const Resume = () => {
                     <p className="py-3">
                         I have developed several apps for both iOS and Android.
                         These include 2 React Native apps, a C custom game
-                        engine (using SDL) game (also released on Windows and
+                        engine game (using SDL and also released on Windows and
                         Mac), a C++ game (using Cocos2dx framework).
                     </p>
                 </div>
